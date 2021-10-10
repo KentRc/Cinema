@@ -9,32 +9,107 @@
 		<link rel="stylesheet" href="CSS/normalize.css">
 		<meta charset="UTF-8">
 	</head>
-	<header class= "header container">
-		<a href="index.html">
-			<img src="IMG/logo.svg" alt="Логотип">
-		</a>
-		<nav class="nav">
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="#" class="menu-link">Главная</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-link">Фильмы</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-link">Кинотеатры</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-link">События</a>
-				</li>
-				<li class="menu-item">
-					<a href="#" class="menu-link">Поддержка</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="user">
-			<span>Привет, Владимир</span>
-			<img class= "avatar" src="IMG/avatar.jpg" alt="Аватар">
+	<header class= "header">
+		<div class="navbar container">
+			<a href="index.html">
+				<img src="IMG/logo.svg" alt="Логотип">
+			</a>
+			<nav class="nav">
+				<ul class="menu">
+					<li class="menu-item">
+						<a href="#" class="menu-link">Главная</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Фильмы</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Кинотеатры</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">События</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Поддержка</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user">
+				<span>Привет, Владимир</span>
+				<img class= "avatar" src="IMG/avatar.jpg" alt="Аватар">
+			</div>
+		</div>
+		<div class="film container">
+			<div class="film-info">
+				<small class="film-title-small">
+					Avengers: Infinity War
+				</small>
+				<h1 class="film-title">
+					Мстители: война бесконечности
+				</h1>
+				<p class="film-description">
+					Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+				</p>
+				<div class="film-details">
+					<div class="time">
+						<img src="IMG/time.svg" alt="clock" class="time-icon">
+						<span class="time-counter">240 мин.</span>
+					</div>
+					<div class="rating">
+						<img src="IMG/imdb.svg" alt="imdb" class="rating-logo">
+						<span class="rating-counter">
+							<strong class="rating-current">9.2</strong> / 10
+						</span>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="film-trailer">
+				<img src="IMG/play_trailer.svg" alt="play">
+			</a>
+		</div>
+		<div class="session container">
+			<div class="session-date">
+				<span class="session-label">Дата</span>
+				<div class="session-date-block">
+					<div class="session-date-item">
+						<span class="session-month">АПР</span>
+						<span class="session-day">27</span>
+						<span class="session-week">ПТ</span>
+					</div>
+					<div class="session-date-item">
+						<span class="session-month">АПР</span>
+						<span class="session-day">28</span>
+						<span class="session-week">СБ</span>
+					</div>
+					<div class="session-date-item">
+						<span class="session-month">АПР</span>
+						<span class="session-day">29</span>
+						<span class="session-week">ВС</span>
+					</div>
+					<div class="session-date-item">
+						<span class="session-month">АПР</span>
+						<span class="session-day">30</span>
+						<span class="session-week">ПН</span>
+					</div>
+				</div>
+			</div>
+			<div class="session-cinema">
+				<span class="session-label">Кинотеатр</span>
+				<select class="select select-cinema" name="cinema">
+					<option class="option" value="3D, ул. Калужская 28">3D, ул. Калужская 28</option>
+					<option class="option" value="3D, ул. Карла-Маркса 1">3D, ул. Карла-Маркса 1</option>
+					<option class="option" value="4DX, ул. Есенина 12">4DX, ул. Есенина 12</option>
+					<option class="option" value="IMAX, ул. Ленина 3">IMAX, ул. Ленина 3</option>
+				</select>
+			</div>
+			<div class="session-time">
+				<span class="session-label">Время</span>
+				<select class="select" name="time">
+					<option class="option" value="11:30">11:30</option>
+					<option class="option" value="14:45">14:45</option>
+					<option class="option" value="17:15">17:15</option>
+					<option class="option" value="20:00">20:00</option>
+				</select>
+			</div>
 		</div>
 	</header>
 	<body class= body>
